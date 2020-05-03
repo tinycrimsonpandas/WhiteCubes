@@ -1,4 +1,4 @@
-# WhiteCube
+# WhiteCubes
 
 A (hopefully) easy way to produce a simple static gallery site for visual artists. Many people use Squarespace or Wix and they end up with sites that look like a webstore, this was inspired by the Indexibit project and tries to recreate the feel of that without needing a database and more expensive hosting. This was created as a final project for Harvard's CS50.
 
