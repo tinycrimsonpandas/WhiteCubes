@@ -2,3 +2,14 @@
 index: true
 insta: true
 nav-items:
+  - type: 'break'
+  - type: 'nav-link'
+    text: 'Demo Gallery' 
+    href: '/demo/'
+  - type: 'break'
+  - type: 'nav-link'
+    text: 'About'
+    href: '/about/'
+  - type: 'nav-link'
+    text: 'Contact'
+    href: '/contact/'
