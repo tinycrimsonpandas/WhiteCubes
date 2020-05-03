@@ -2,17 +2,3 @@
 index: true
 insta: true
 nav-items:
-  - type: 'break'
-  - type: 'nav-link'
-    text: 'Set' 
-    href: '/set/'
-  - type: 'nav-link'
-    text: 'Archive'
-    href: '/archive/'
-  - type: 'break'
-  - type: 'nav-link'
-    text: 'About'
-    href: '/about/'
-  - type: 'nav-link'
-    text: 'Contact'
-    href: '/contact/'
