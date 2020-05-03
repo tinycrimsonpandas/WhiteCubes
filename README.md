@@ -32,9 +32,9 @@ Here is an example site, the original inspiration for this project (currently un
 
 4. Go to the 'Settings' collection in the control panel and first set-up your site title, instagram link, default open graph image, etc.
 
-6. Start adding galleries and pages (see below for more information). [More info here.](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain)
+6. Start adding galleries and pages (see below for more information). 
 
-6. Eventually, buy or point your custom domain to Netlify and configure it for your new site. 
+6. Eventually, buy or point your custom domain to Netlify and configure it for your new site. [More info here.](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain)
 
 ### Harder
 
