@@ -4,6 +4,9 @@ A (hopefully) easy way to produce a simple static gallery site for visual artist
 
 Built on flask, frozen flask, netlify cms, and easily deployable to Netlify's CI/CD platform for static sites. For most people (those with less than 100GB of bandwith usage a month), this software should enable a simple porfolio site for only the yearly cost of a custom domain name. 
 
+Here is an example site, the original inspiration for this project (currently under construction):
+[Example!](https://amazing-euler-31dfc1.netlify.app)
+
 ## Benefits
 * Super simple website generator for visual artists, deploy to netlify and then use the CMS interface to add galleries, pages, and even contact forms. 
     * Can be used without Netlify on any host capable of delivering HTML documents. Though the setup for the CMS control panel requires a couple extra steps
