@@ -17,7 +17,7 @@ Built on flask, frozen flask, netlify cms, and easily deployable to Netlify's CI
 1. First deploy this repo to netlify by clicking this button -->
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/tinycrimsonpandas/WhiteCubes"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
-2. Once the initial deploy is successful, set yourself up a user account on your new Netlify site by navigating to the Identity tab, clicking "Enable Identity", then "Invite Users" to add yourself as a user! Follow the instructions in your email to activate your account.
+2. Once the initial deploy is successful, set yourself up a user account on your new Netlify site by navigating to the Identity tab, clicking "Enable Identity", then "Invite Users" to add yourself as a user! Follow the instructions in your email to activate your account. 
 
 3. Once your account is activated, go to `[temporary url from netlify]/static/admin/` and log in using the credentials you just created.
 
