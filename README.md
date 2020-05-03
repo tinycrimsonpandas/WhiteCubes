@@ -53,3 +53,4 @@ Built on flask, frozen flask, netlify cms, and easily deployable to Netlify's CI
 
 
 ## Creating Galleries and Pages
+COMING SOON 
