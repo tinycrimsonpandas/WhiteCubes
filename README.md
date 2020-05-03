@@ -7,6 +7,12 @@ Built on flask, frozen flask, netlify cms, and easily deployable to Netlify's CI
 Here is an example site, the original inspiration for this project (currently under construction):
 [Example!](https://amazing-euler-31dfc1.netlify.app)
 
+## Features
+* Simple UI to create galleries and pages
+* Built-in slideshow/lightbox on every gallery page
+* Built-in automatic image resizing and thumbnail generation
+* Create pages easily using markdown or HTML
+
 ## Benefits
 * Super simple website generator for visual artists, deploy to netlify and then use the CMS interface to add galleries, pages, and even contact forms. 
     * Can be used without Netlify on any host capable of delivering HTML documents. Though the setup for the CMS control panel requires a couple extra steps
