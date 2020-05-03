@@ -1,0 +1,22 @@
+<ul class="uk-nav uk-nav-primary">
+    {% if nav['index'] == True %}
+    <li class="/"><a href="/">Catherine Lentini</a></li>
+    <br/>
+    {% endif %}
+    {% for item in nav['nav-items'] %}
+        {% if item['type'] == 'break' %}
+        <li><br/></li>
+        {% endif %}
+        {% if item['type'] == 'nav-link' %}
+           <li class="{{item['href']}}">
+               <a href="{{item['href']}}">{{item['text']}}</a>
+           </li>
+        {% endif %}
+    {% endfor %}
+    {% if nav['insta'] == True %}
+    <li class="instalink">
+        <a href="{{site['instalink']}}" alt="instagram"><span uk-icon="instagram" class="uk-margin-top"></span></a>
+    </li>
+    {% endif %}
+</ul>
+

@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+        <div class="gallery uk-child-width-1-2@m uk-child-width-1-2@l uk-margin-small-top" uk-grid="masonry: true" uk-lightbox>
+            {% for image in page['images'] %}
+            <div class="gallery_card uk-card uk-card-small">
+                <div class="gallery_card_img uk-card-media-top">
+                    <a href="{{image['url']}}" data-caption="{{image['title']}} {{image['year']}} {{image['dimensions']}}">
+                        <img src="{{image['thumbnail']}}" alt="{{image['title']}}">
+                    </a>
+                </div>
+                <div class="gallery_card_desc uk-card-footer uk-text-small uk-card-default uk-text-center">
+                    {{image['title']}}
+                    {{image['year']}} <br/>
+                    {{image['dimensions']}}
+                    {{image['medium']}}
+                </div>
+            </div>
+            {% endfor %}
+        </div>   
+{% endblock %}
+

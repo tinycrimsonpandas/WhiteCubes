@@ -1,0 +1,16 @@
+    <head>
+        <title>{{page.title}} | {{site['sitetitle']}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{page['meta']['seo-description']}}">
+        <!-- Open Graph Metadata for FB sharing -->
+        <meta property="og:title" content="{{page.title}} | {{site['sitetitle']}}" />
+        <meta property="og:type" content="website" />
+        {% if page.meta['template'] == 'gallery.html' %}
+        <meta property="og:image" content="{{page['images'][0]['url']}}" />
+        {% else %}
+        <meta propert="og:image" content="{{site['ogimage']}}" />
+        {% endif %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+        <link href="/static/css/style.css" rel="stylesheet">
+    </head>

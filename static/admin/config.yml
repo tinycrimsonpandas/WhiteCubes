@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/images"
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    label_singular: 'Page'
+    description: >
+      This is page item. The content can be either markdown or HTML.
+    folder: 'pages/text'
+    format: 'yaml-frontmatter'
+    extension: 'html'
+    frontmatter_delimiter: '###'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Template', name: 'template', widget: 'hidden', default: 'flatpage.html' }
+      - { label: 'SEO Description', name: 'seo-description', widget: 'string'}
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+  - name: 'galleries'
+    label: 'Galleries'
+    label_singular: 'Gallery'
+    description: >
+      This is a basic gallery!
+    folder: 'pages/galleries'
+    format: 'yaml'
+    editor:
+      preview: false
+    extension: 'html'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'SEO Description', name: 'seo-description', widget: 'string'}
+      - { label: 'Template', name: 'template', widget: 'hidden', default: 'gallery.html' }
+      - label: 'Images'
+        name: 'images'
+        widget: 'list'
+        fields: 
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Dimensions', name: 'dimensions', widget: 'string' }
+          - { label: 'Medium', name: 'medium', widget: 'string' }
+          - { label: 'Year', name: 'year', widget: 'string' }
+          - { label: 'Image', name: 'url', widget: 'image' }
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'site'
+        label: 'Site Settings'
+        file: 'settings/site.yml'
+        format: 'yaml'
+        description: 'Overall site settings'
+        fields: 
+          - { label: 'Site Title', name: 'sitetitle', widget: 'string', hint: 'This is used on the navbar and in page titles' }
+          - { label: 'Mobile Title', name: 'minititle', widget: 'string', hint: 'This is used on the mobile view'}
+          - { label: 'Instagram Link', name: 'instalink', widget: 'string', hint: 'Can be used in Nav'} 
+          - { label: 'Deafult Open Graph Image', name: 'og_default', widget: 'image'}    
+      - name: 'nav'
+        label: 'Navigation'
+        file: 'settings/nav.yml'
+        format: 'yaml'
+        description: 'Navigation links settings'
+        fields:
+          - name: 'index'
+            label: 'Display index link?'
+            widget: 'boolean'
+            default: true
+          - name: 'insta'
+            label: 'Display Instagram link?'
+            widget: 'boolean'
+            default: true
+          - name: nav-items
+            label: 'Navigation Items'
+            widget: 'list'
+            types:
+              - label: 'Nav Link'
+                name: 'nav-link'
+                widget: 'object'
+                fields:
+                  - name: 'text'
+                    label: 'Link Text'
+                    widget: 'string'
+                  - name: 'href'
+                    label: 'link'
+                    widget: 'string'
+                    hint: 'Relative path for an internal page or full url for external'
+              - label: 'Line Space'
+                name: 'break'
+                widget: 'object'

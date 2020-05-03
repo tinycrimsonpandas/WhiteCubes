@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'header.html' %}
+  <body>
+    <!-- mobile navigation -->
+    <nav class="uk-navbar-container uk-hidden@m" uk-navbar uk-sticky>
+        <div uk-toggle="target: #mobilenav" class="uk-navbar-left" uktoggle>
+            <span class="uk-navbar-item" uk-icon="menu"></span>
+        </div>
+        <div class="uk-navbar-center" uk_toggle="target: #mobilenav">
+            <span class="uk-navbar-item uk-logo">{{site['minititle']}}</span>
+        </div>
+    </nav>
+
+    <div id="mobilenav" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar uk-width-1-1">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav">
+                {% include 'nav.html' %}
+            </ul>
+        </div>
+    </div>
+
+<!-- main content -->
+    <div class="uk-container uk-padding-large uk-width-auto">
+        <div class="uk-width-1-5 uk-visible@m uk-position-fixed">
+    <!-- regular navigation -->
+            <div>
+                {% include 'nav.html' %}
+            </div>
+        </div>
+    <!-- content starts here -->
+    <div>
+        <div class="uk-width-4-5@m uk-width-5-5@s uk-float-right">
+        {% block content %}{% endblock %}
+        </div>
+    </div>
+    <!-- UIkit JS -->
+    {% include 'js.html' %}
+  </body>
+</html>

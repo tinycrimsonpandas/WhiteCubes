@@ -1,0 +1,3 @@
+[build]
+  command = "python whitecube.py"
+  publish = "build"
