@@ -54,9 +54,9 @@ Here is an example site, the original inspiration for this project (currently un
 
 5. Run `python whitecube.py` to create your static site, which will appear in the new `/build` directory.
 
-6. Optionally you can run `python whitecube.py preview` to build the site and then launch a local flask server to preview your static content. Please note that you are previewing the statically generated content, so any edits require re-running `pythong whitecube.py preview`. There is one limitation with the preview mode: you cannot see your custom error pages.
+6. Optionally you can run `python whitecube.py preview` to build the site and then launch a local flask server to preview your static content. Please note that you are previewing the statically generated content, so any edits require re-running `python whitecube.py preview`. There is one limitation with the preview mode: you cannot see your custom error pages.
 
-7. Set up your static server of your choice, such as GitHub Pages, any manually upload the build folder or set up a CI/CD process of your preference.
+7. Set up your static server of your choice, such as GitHub Pages, and manually upload the build folder or set up a CI/CD process of your preference.
 
 ***
 
