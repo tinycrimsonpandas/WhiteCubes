@@ -1,6 +1,6 @@
 # WhiteCubes
 
-A (hopefully) easy way to produce a simple static gallery site for visual artists. Many people use Squarespace or Wix and they end up with sites that look like a webstore, this was inspired by the Indexibit project and tries to recreate the feel of that without needing a database and more expensive hosting. This was created as a final project for Harvard's CS50.
+A (hopefully) easy way to produce a simple static gallery site for visual artists. Many people use Squarespace or Wix and they end up with sites that look like a webstore, this was inspired by the Indexibit project and tries to recreate the feel of that without needing a database and more expensive hosting. This was created as a final project for [Harvard's CS50](http://cs50.harvard.edu).
 
 Built on flask, frozen flask, flask flatpages, and netlify cms. Easily deployable to Netlify's platform for static sites. For most people (those with less than 100GB of bandwith usage a month), this software should enable a simple porfolio site for only the yearly cost of a custom domain name. 
 
