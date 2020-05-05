@@ -10,9 +10,7 @@ pylint = "*"
 [packages]
 flask = "*"
 frozen-flask = "*"
-requests = "*"
 flask-flatpages = "*"
-flask-images = "*"
 pyyaml = "*"
 pillow = "*"
 
